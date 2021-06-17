@@ -11,7 +11,8 @@
         <div class="list-group">
           <!--生成路由链接-->
           <router-link to="/about" class="list-group-item">About</router-link>
-          <router-link to="/home" class="list-group-item">Home</router-link>
+          <router-link to="/home"  class="list-group-item">Home</router-link>
+          <router-link to="/form"  class="list-group-item">Form</router-link>
         </div>
       </div>
       <div class="col-xs-6">
@@ -25,11 +26,19 @@
         </div>
       </div>
     </div>
+
+    
   </div>
 </template>
 
 <script>
-  export default {}
+  export default {
+    data(){
+      return{
+         message:'welcome to here'
+      }
+    }
+  }
 </script>
 
 <style>

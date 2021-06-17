@@ -5,6 +5,8 @@ import Home from '../pages/Home.vue'
 import News from '../pages/News.vue'
 import Message from '../pages/Message.vue'
 import MessageDetail from '../pages/MessageDetail.vue'
+import Form from '../pages/Form.vue'
+import Topage from '../pages/Topage.vue';
 const routes = [
 	{
 		path: "/home",
@@ -37,6 +39,16 @@ const routes = [
 		component: () =>
 			import("../pages/About.vue"),
 	},
+  {
+    path: "/form",
+    name:"Form",
+    component:Form,
+    children:[{
+      path:"/form/topage",
+      name:'Topage',
+      component:Topage
+    }]
+  }
 ];
 
 const router = createRouter({
